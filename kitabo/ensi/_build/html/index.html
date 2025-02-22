@@ -408,10 +408,59 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="probability-y">
 <span id="probability"></span><h1>Probability, ∂Y 🎶 ✨ 👑<a class="headerlink" href="#probability-y" title="Permalink to this heading">#</a></h1>
+<style>
+  /* Apply styles only to elements with the custom class */
+  .custom-details summary {
+    list-style: none;  /* Remove default dropdown triangle */
+    cursor: pointer;
+    font-weight: normal; /* Normal text weight */
+    display: inline-block;
+    padding: 5px 15px;
+    border: 2px dotted black; /* Dotted circle */
+    border-radius: 20px; /* Make it rounded */
+    text-align: center;
+    transition: color 0.3s ease-in-out; /* Smooth transition */
+  }
+
+  .custom-details summary:hover {
+    color: lightgray; /* Change text color on hover */
+  }
+
+  .custom-details summary::-webkit-details-marker {
+    display: none; /* Remove marker in WebKit (Chrome, Safari) */
+  }
+</style>
+<details class="custom-details">
+  <summary>+ Expand</summary>
+  <blockquote style="border-left: 4px solid #ccc; padding-left: 10px; color: #555;">
+     <em>
+     <p>How Does Agentic AI Work?</p> 
+     <p>Agentic AI uses a four-step process for problem-solving:</p> 
+     <p>Perceive: AI agents gather and process data from various sources, such as sensors, databases and digital interfaces. This involves extracting meaningful features, recognizing objects or identifying relevant entities in the environment.</p> 
+     <p>Reason: A large language model acts as the orchestrator, or reasoning engine, that understands tasks, generates solutions and coordinates specialized models for specific functions like content creation, visual processing or recommendation systems. This step uses techniques like retrieval-augmented generation (RAG) to access proprietary data sources and deliver accurate, relevant outputs.</p> 
+     <p>Act: By integrating with external tools and software via application programming interfaces, agentic AI can quickly execute tasks based on the plans it has formulated. Guardrails can be built into AI agents to help ensure they execute tasks correctly. For example, a customer service AI agent may be able to process claims up to a certain amount, while claims above the amount would have to be approved by a human.</p> 
+     <p>Learn: Agentic AI continuously improves through a feedback loop, or
+“data flywheel,” where the data generated from its interactions is fed into the system to enhance models. This ability to adapt and become more effective over time offers businesses a powerful tool for driving better decision-making and operational efficiency.</p> 
+    </em>
+   <p>--<a href="https://blogs.nvidia.com/blog/what-is-agentic-ai/"> Nvidia</a></p>
+ </blockquote>
+</details>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const details = document.querySelector(".custom-details");
+    const summary = details.querySelector("summary");
+
+    details.addEventListener("toggle", function() {
+      summary.textContent = details.open ? "- Collapse" : "+ Expand";
+    });
+  });
+</script>
+<p></p>
+<p></p>
 <p>The landscape of intelligence—whether biological, artificial, or economic—rests on a fundamental architecture of layers, each building upon the last to generate complex behaviors. Traditional frameworks for understanding this hierarchy have included <strong>Ecosystem, Perceptual, Agentic, Generative, and Robotic</strong> components, each representing a distinct function in how an entity perceives, processes, and acts upon the world. However, a new variation on this theme presents itself: <strong>Server, API, Firm, Environment, Reward (SAFER™)</strong>. This alternative framework shifts the perspective toward economic and computational efficiency, mapping the way firms interact with their surroundings through increasingly digitized and automated mechanisms.</p>
 <p>At the core of SAFER™ is the <strong>Firm</strong>, which exists within a dynamic and often unpredictable <strong>Environment</strong>. Historically, firms have relied on a <strong>Principal-Agent</strong> model, where a Principal (e.g., a business owner, investor, or executive) employs human Agents (e.g., managers, employees, or consultants) to make decisions and execute strategies. The tension in this model arises from the well-documented <strong>Principal-Agent problem</strong>, where misaligned incentives, inefficiencies, and agency costs create friction within the system. The advent of <strong>Application Programming Interfaces (APIs)</strong> introduces a transformative alternative, offering a pathway toward disintermediation, where digital mechanisms replace human agents to execute tasks with precision, consistency, and scalability.</p>
 <figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="https://blogs.nvidia.com/wp-content/uploads/2024/10/agentic-ai-workflow-1.png"><img alt="https://blogs.nvidia.com/wp-content/uploads/2024/10/agentic-ai-workflow-1.png" src="https://blogs.nvidia.com/wp-content/uploads/2024/10/agentic-ai-workflow-1.png" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="https://blogs.nvidia.com/wp-content/uploads/2024/10/agentic-ai-workflow-1.png"><img alt="https://blogs.nvidia.com/wp-content/uploads/2024/10/agentic-ai-workflow-1.png" src="https://blogs.nvidia.com/wp-content/uploads/2024/10/agentic-ai-workflow-1.png" style="width: 100%;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 1 </span><span class="caption-text"><em>Ecosystem, Perceptual, Agentic, Generative, Robotic</em>. Let’s contemplate a variant on this theme: Server, API, Firm, Environment, Reward (SAFER™). The firm has a Principal and may employ an Agent; however, efficiency will aim for an API in-lieu of these human interactions. The API is a digital transformation that allows for the emergence of dynamic capabilities in real-time as the environment may have unpredictable shifts among cooperative, transactional, and adversarial equilibria.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -534,7 +583,7 @@ document.write(`
         <span class="n">node_size</span><span class="o">=</span><span class="mi">3000</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">connectionstyle</span><span class="o">=</span><span class="s2">&quot;arc3,rad=0.2&quot;</span>
     <span class="p">)</span>
     <span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_edge_labels</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">edge_labels</span><span class="o">=</span><span class="n">edges_labels</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;SAFER™&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;SAFER™&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">25</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
 <span class="c1"># Run the visualization</span>
@@ -544,13 +593,13 @@ document.write(`
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="_images/ac7dfedce70adc37dc341146141a0012a71d78adca88f13a8c9cf8d2574d652d.png" src="_images/ac7dfedce70adc37dc341146141a0012a71d78adca88f13a8c9cf8d2574d652d.png" />
+<img alt="_images/0916b890a9a99ca2588c3e4eb9df8106b5cbc947508bf4c849ddd98fbaac5205.png" src="_images/0916b890a9a99ca2588c3e4eb9df8106b5cbc947508bf4c849ddd98fbaac5205.png" />
 </div>
 </div>
 <figure class="align-default" id="id2">
 <a class="reference internal image-reference" href="_images/blanche.png"><img alt="_images/blanche.png" src="_images/blanche.png" style="width: 1px; height: 1px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2 </span><span class="caption-text"><em><code class="docutils literal notranslate"><span class="pre">Grammar</span></code> is the Ecosystem and <code class="docutils literal notranslate"><span class="pre">Prosody</span></code> is the Dynamic Capability by Trial-Error &amp; Test-Time</em>. Therein we have morphomics, syntax, and punctuation. But these occupy <code class="docutils literal notranslate"><span class="pre">space</span></code> like visuals and might comeoff as static. It is melody, rhythm, and cadences –meaning or semantics– that evolve over <code class="docutils literal notranslate"><span class="pre">time</span></code>, a dynamic unfolding and transformation of sound into resonant emotional cadences, never overwhelming. Take a second and consider the equation: prose + melody = prosody. That’s a compelling way to look at it, but <em>prosody</em> is not a deliberate portmanteau of <em>prose</em> and <em>melody</em>. However, our intuition is striking because <em>prosody</em> does indeed exist at the intersection of structured language (<em>prose</em>) and musical elements (<em>melody</em>). The Greek root <em>prosōidía</em> (προσῳδία) originally referred to the melody and intonation of speech—essentially, the “song” in language. So while <em>prosody</em> wasn’t consciously constructed as a portmanteau, it does conceptually embody a fusion of prose and melody. In that sense, our interpretation is poetically fitting, even if etymologically coincidental.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">Grammar</span></code> is the ecosystem—the rigid, ever-present structure of language—while <code class="docutils literal notranslate"><span class="pre">Prosody</span></code> is its dynamic, trial-and-error evolved capability. Within grammar reside morphomics, syntax, and punctuation: the static, visual placeholders that, although essential, often feel lifeless. In stark contrast, prosody embodies the fluidity of melody, rhythm, and cadences—the evolving semantics that transform mere sound into a symphony of resonant emotional expression over time. <strong>Consider</strong> this striking equation: prose + melody = prosody. It’s a compelling way to view language, even though <em>prosody</em> wasn’t consciously constructed as a blend of <em>prose</em> and <em>melody</em>. Our intuition, however, couldn’t be more accurate. Prosody lives at the vibrant intersection of structured language and musical nuance, capturing the very soul of communication. <strong>The</strong> Greek root <em>prosōidía</em> (προσῳδία) originally described the melody and intonation of speech—the inherent “song” in language. While it wasn’t deliberately designed as a portmanteau, this serendipitous fusion perfectly encapsulates the idea that language is more than rigid rules; it’s an ever-evolving dance between order and expressive art.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="toctree-wrapper compound">
