@@ -429,22 +429,45 @@ document.write(`
   .custom-details summary::-webkit-details-marker {
     display: none; /* Remove marker in WebKit (Chrome, Safari) */
   }
+
+  /* Style for the ordered list inside the blockquote for visual appeal */
+  .custom-details blockquote {
+    border-left: 4px solid #ccc;
+    padding-left: 10px;
+    color: #555;
+  }
+
+  .custom-details blockquote h3,
+  .custom-details blockquote h4 {
+    margin: 0.5em 0;
+  }
+
+  .custom-details blockquote ol {
+    margin: 1em 0;
+    padding-left: 2em;
+    list-style-type: decimal;
+  }
+
+  .custom-details blockquote ol li {
+    margin-bottom: 0.75em;
+    font-style: italic;
+    line-height: 1.5;
+  }
 </style>
 <details class="custom-details">
   <summary>+ Expand</summary>
-  <blockquote style="border-left: 4px solid #ccc; padding-left: 10px; color: #555;">
-     <em>
-     <h3>How Does Agentic AI Work?</h3> 
-     <h4>Agentic AI uses a five-step process for problem-solving:</h4> 
-     <o>World: The first principals of the cosmos, planet, life, ecosystem, and intelligence are experienced in real-time. Humanity has encoded these in the laws of physics, biology, sociology and other subdomains.</o> 
-     <o>Perceive: AI agents gather from the world and process data from various sources, such as sensors, databases and digital interfaces. This involves extracting meaningful features, recognizing objects or identifying relevant entities in the environment.</o> 
-     <o>Reason: A large language model acts as the orchestrator, or reasoning engine, that understands tasks, generates solutions and coordinates specialized models for specific functions like content creation, visual processing or recommendation systems. This step uses techniques like retrieval-augmented generation (RAG) to access proprietary data sources and deliver accurate, relevant outputs.</o> 
-     <o>Act: By integrating with external tools and software via application programming interfaces, agentic AI can quickly execute tasks based on the plans it has formulated. Guardrails can be built into AI agents to help ensure they execute tasks correctly. For example, a customer service AI agent may be able to process claims up to a certain amount, while claims above the amount would have to be approved by a human.</o> 
-     <o>Learn: Agentic AI continuously improves through a feedback loop, or
-“data flywheel,” where the data generated from its interactions is fed into the system to enhance models. This ability to adapt and become more effective over time offers businesses a powerful tool for driving better decision-making and operational efficiency.</o> 
-    </em>
-   <p>--<a href="https://blogs.nvidia.com/blog/what-is-agentic-ai/"> Nvidia</a></p>
- </blockquote>
+  <blockquote>
+    <h3>How Does Agentic AI Work?</h3>
+    <h4>Agentic AI uses a five-step process for problem-solving:</h4>
+    <ol>
+      <li><strong>World:</strong> The first principles of the cosmos, planet, life, ecosystem, and intelligence are experienced in real time. Humanity has encoded these in the laws of physics, biology, sociology, and other domains.</li>
+      <li><strong>Perceive:</strong> AI agents gather information from the world via sensors, databases, and digital interfaces, extracting meaningful features and recognizing key entities.</li>
+      <li><strong>Reason:</strong> A large language model acts as the orchestrator, understanding tasks, generating solutions, and coordinating specialized models for functions such as content creation, visual processing, or recommendation systems. Techniques like retrieval-augmented generation (RAG) access proprietary data for accurate outputs.</li>
+      <li><strong>Act:</strong> By integrating with external tools and APIs, agentic AI quickly executes tasks based on its formulated plans. Guardrails ensure proper task execution—for instance, a customer service agent might auto-process claims up to a limit, with higher amounts requiring human approval.</li>
+      <li><strong>Learn:</strong> Agentic AI continuously refines itself through a feedback loop (a “data flywheel”), where interaction data enhances the models, enabling it to adapt and drive better decision-making and efficiency over time.</li>
+    </ol>
+    <p>-- <a href="https://blogs.nvidia.com/blog/what-is-agentic-ai/">Nvidia</a></p>
+  </blockquote>
 </details>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
